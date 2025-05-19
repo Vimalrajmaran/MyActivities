@@ -16,7 +16,7 @@ public class Chrome {
 		System.out.println("Developer Type = "+Developer_Type);
 		System.out.println("Beta = "+Beta);
 		System.out.println("Release Year = "+Release_Year);
-		System.out.println("Shortcut Key = "+Shortcut_Key);
+		System.out.println("Shortcuttt Key = "+Shortcut_Key);
 	}
 
 }

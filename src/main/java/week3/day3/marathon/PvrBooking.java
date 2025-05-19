@@ -50,7 +50,7 @@
 	        }
 	       catch(Exception e)
 	       {
-	    	   System.out.println("An error occured" +e.getMessage()); 			//if any exception throws it should be diplayed
+	    	   System.out.println("An errordd occured" +e.getMessage()); 			//if any exception throws it should be diplayed
 	       }
 	       finally
 	       {
