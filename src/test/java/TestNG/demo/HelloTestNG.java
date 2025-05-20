@@ -1,3 +1,4 @@
+package TestNG.demo;
 import org.testng.annotations.Test;
 
 public class HelloTestNG {

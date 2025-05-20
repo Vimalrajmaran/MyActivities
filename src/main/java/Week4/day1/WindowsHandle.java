@@ -42,7 +42,7 @@ public class WindowsHandle {
        }
        finally
        {
-    	   driver.close(WindowsHandle);
+    	   driver.close();
        }
 }
 }

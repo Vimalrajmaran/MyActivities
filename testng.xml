@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MySuite">
+  <test name="Smoke Test">
+  <groups>
+  <run>
+  <include name="Smoke"/>
+  </run>
+  </groups>     
+  <classes>
+      <class name="TestNG.demo.LoginTest"/>
+    </classes>
+ </test>
+ <test name="Regression Test">
+ <groups>
+ <run>
+ <include name="Regression"/>
+ </run>
+ </groups>
+  <classes>
+      <class name="TestNG.demo.LoginTest"/>
+    </classes>
+ </test>
+</suite>

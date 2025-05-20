@@ -1,15 +1,16 @@
-	package week3.day3.marathon;
+	package TestNG.demo;
 	
 	import org.openqa.selenium.*;
 	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.openqa.selenium.safari.SafariDriver;
 	import org.openqa.selenium.support.ui.WebDriverWait;
-	import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.Test;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 	import java.time.Duration;
 	
 	public class PvrBooking {
-	
-	    public static void main(String[] args) throws InterruptedException {
+		@Test
+	    public void bookingTicket() throws InterruptedException {
 	    	WebDriver driver = new SafariDriver();
 	        driver.get("https://www.pvrcinemas.com/");
 	        driver.manage().window().maximize();
@@ -29,7 +30,7 @@
 	        driver.findElement(By.xpath("(//li[@class='p-dropdown-item'])[4]")).click();
 	        Thread.sleep(2000);
 	        driver.findElement(By.xpath("//button[@class='p-button p-component sc-hORkcV gUVSfS bgColor filter-btn']")).click();
-	        Thread.sleep(2000);
+	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	        driver.findElement(By.xpath("//button[@class='sc-kfeOyU hsmcHs reject-terms']")).click();
 	        Thread.sleep(2000);
 	        driver.findElement(By.xpath("//span[@id='EL.ELITE|G:10']")).click();
