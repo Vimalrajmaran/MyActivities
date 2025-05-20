@@ -31,9 +31,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 	        Thread.sleep(2000);
 	        driver.findElement(By.xpath("//button[@class='p-button p-component sc-hORkcV gUVSfS bgColor filter-btn']")).click();
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-	        driver.findElement(By.xpath("//button[@class='sc-kfeOyU hsmcHs reject-terms']")).click();
+	        driver.findElement(By.xpath("//button[@class='sc-kfeOyU hsmcHs reject-terms']")).click(); //accept terms & Conditions
 	        Thread.sleep(2000);
-	        driver.findElement(By.xpath("//span[@id='EL.ELITE|G:10']")).click();
+	        driver.findElement(By.xpath("//span[@id='EL.ELITE|G:10']")).click(); //select seat
 	        Thread.sleep(2000);
 	        driver.findElement(By.xpath("//button[@class='sc-dJkDXt bWYhCG btn-proceeded']")).click();
 	        Thread.sleep(2000);
